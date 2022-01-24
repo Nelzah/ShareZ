@@ -16,3 +16,9 @@ consider this a fork from the future of [this](https://github.com/Madzahttr/Shar
 `xclip` - Copies screenshots to clipboard
 
 `lftp` - Sends screenshots and uploads them to ftp
+
+## Screenshots
+
+![Screenshot](screenshot1.png)
+![Screenshot](screenshot2.png)
+![Screenshot](screenshot3.png)
