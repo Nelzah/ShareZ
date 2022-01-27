@@ -1,6 +1,6 @@
 # CONFIG #
 auth="username,password"
-savedir="/home/pi/Pictures"
+saveDir="/home/pi/Pictures"
 imageName=$(tr -dc 'A-Z0-9a-z' < /dev/urandom | head -c4)-$(tr -dc 'A-Z0-9a-z' < /dev/urandom | head -c4)
 ip='192.168.1.32'
 # CONFIG #
@@ -35,7 +35,7 @@ if [ "$method" == "Copy to Clipboard" ]; then
 elif [ "$method" == "Upload to FTP" ]; then
     notify-send "Uploading screenshot to FTP"
     lftp -u $auth $ip << EOF
-    cd $savedir
+    cd $saveDir
     put /tmp/$imageName.png
     bye
 EOF
